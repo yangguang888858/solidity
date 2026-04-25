@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "message",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HelloSolidity.sol": "Hello2"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HelloSolidity.sol": {
+			"keccak256": "0xe1338927d14b9724cec47ea8de2b37b8cd426afdcf4d1b9d92f58ef2f903135b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://174053ad67e9218dbb44fb09bbf4d658955473cd30d014e17783911dfa6d8040",
+				"dweb:/ipfs/QmSwo6cA2cXib2Dh5xuZRkiC98WSTAiSBiXME3ufUFGnJq"
+			]
+		}
+	},
+	"version": 1
+}

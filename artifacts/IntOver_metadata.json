@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "add",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DataType/IntOverHighVersion.sol": "IntOver"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DataType/IntOverHighVersion.sol": {
+			"keccak256": "0x61621b65da90e34c9cb9614ca75b382e45418924cdec731468004521f3651129",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://94e5d03595fd49ee7681826dbccd5be41d9a012ad08676cfbebdecf0e807e578",
+				"dweb:/ipfs/QmP8m3RgM6K5mMQTv5bfsgZjWG2UsWXwe1d4yZrgWcdXDM"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "compare",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/02integer/CompareOperators.sol": "CompareOperators"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/02integer/CompareOperators.sol": {
+			"keccak256": "0xe711fd0e4388e75657849c65f40d9fa0a783bc2039b8ed59e05525e2817dab34",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8efd3bd5dea0705de64620ab63bc489d8727e00de7053f61f69db38f6c825e80",
+				"dweb:/ipfs/QmZNxopnzF9iH39rpKVBWYiANcrk9yf1BHzaLozE6AuVbB"
+			]
+		}
+	},
+	"version": 1
+}

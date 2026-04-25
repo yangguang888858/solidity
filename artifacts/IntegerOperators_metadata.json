@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "arithmeticOperators",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/02integer/IntegerOperators.sol": "IntegerOperators"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/02integer/IntegerOperators.sol": {
+			"keccak256": "0xdf4273b0e8dac31db8ee907f7ad9270c33237dd8218dbeb82e7505fa47d08338",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cb423077be0abf7488d5778f7b00d210b2c7058581fc11d272c06a9ec024ede4",
+				"dweb:/ipfs/QmVeHSYFVmzKYUzco6w5ueE2ZNP8KkLyvjvPhuh5mntUW5"
+			]
+		}
+	},
+	"version": 1
+}

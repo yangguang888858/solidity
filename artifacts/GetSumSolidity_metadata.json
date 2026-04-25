@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "data",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSumCalldata",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "data",
+						"type": "uint256[]"
+					}
+				],
+				"name": "getSumMemory",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/GetSumSolidity.sol": "GetSumSolidity"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/GetSumSolidity.sol": {
+			"keccak256": "0x002657dcaac52a4fb0cea5805b59c24e794b7fdaeaab6f2e609c8c0ebadedb61",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be6d27fd23ff262c890bb538a8cac34d8543d51471a577f02062289815bb964e",
+				"dweb:/ipfs/QmXeXgWThxiJ19QF86RAppQvxYcGhir2fUM5GsVRbBswEK"
+			]
+		}
+	},
+	"version": 1
+}

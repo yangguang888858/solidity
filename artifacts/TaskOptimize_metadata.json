@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "data",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "input",
+						"type": "uint256[]"
+					}
+				],
+				"name": "processData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/1.2/TaskOptimized.sol": "TaskOptimize"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/1.2/TaskOptimized.sol": {
+			"keccak256": "0x133c38de6338085c13ba6429ad07fc701d628c46d13ebed32c83dbe622b22586",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b521358d87ac646ec6984844fe7c5fc6ccfdf05488bf12c852f63c68206a6d30",
+				"dweb:/ipfs/QmfMMjxA3Bjq6zF6yNiZuknZHb1aLJ5RFYcuZZWAaDawVb"
+			]
+		}
+	},
+	"version": 1
+}

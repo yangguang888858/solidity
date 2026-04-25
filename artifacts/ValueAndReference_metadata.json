@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getReference",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getValue",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DataType/ValueAndReference.sol": "ValueAndReference"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DataType/ValueAndReference.sol": {
+			"keccak256": "0xc7bbdf2586746419f9bd911cdd058884be3420e327ae527a3107b2dce13577f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3e5f9dd6e1619452572d981b168bb38420f0e9e9b52afaa94b32324c004efe06",
+				"dweb:/ipfs/QmVqheefmUriDZ7u6DUao1J8MvPJQgoKcLrKpohXmnqu9u"
+			]
+		}
+	},
+	"version": 1
+}

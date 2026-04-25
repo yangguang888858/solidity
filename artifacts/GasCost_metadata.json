@@ -1,0 +1,202 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "AddUint128",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "AddUint16",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "AddUint256",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "AddUint32",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "AddUint64",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "AddUint8",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "b",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "c",
+				"outputs": [
+					{
+						"internalType": "uint32",
+						"name": "",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "d",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "e",
+				"outputs": [
+					{
+						"internalType": "uint128",
+						"name": "",
+						"type": "uint128"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "f",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DataType/GasCost.sol": "GasCost"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DataType/GasCost.sol": {
+			"keccak256": "0xe01e77954f6ff436ba52271201c43f7ad91c28d26983e19693718badbb56f714",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://decef488a9711d515ddd5a621aca683ecee1cc7d529006e3880d76ff64b7baf4",
+				"dweb:/ipfs/QmceeSiEEqAh2LRxDiA27iYJoQWU9rRyrmwYJaMrvs6bLY"
+			]
+		}
+	},
+	"version": 1
+}

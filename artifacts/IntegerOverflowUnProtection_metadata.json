@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "testIntegerOverflow",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testIntegerUnderflow",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/02integer/IntegerOverflowUnProtection.sol": "IntegerOverflowUnProtection"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/02integer/IntegerOverflowUnProtection.sol": {
+			"keccak256": "0x9a46bc0c08ecb726a2b00dda35d450d85b2bc133bb17b8e909b53bca99e4e665",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6787521d225dd43471a3cad1eef2be5143356a0a1cb954fbf1c7ebf67835230b",
+				"dweb:/ipfs/QmQpsC9JZkUbPyCDaMnFqgNHADvzfVwsB3zRQ8DsYAmrsN"
+			]
+		}
+	},
+	"version": 1
+}

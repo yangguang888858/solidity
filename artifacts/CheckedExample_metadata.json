@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "increment",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "array",
+						"type": "uint256[]"
+					}
+				],
+				"name": "sumArray",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/02integer/CheckedExample.sol": "CheckedExample"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/02integer/CheckedExample.sol": {
+			"keccak256": "0x56c1a5242ed4614988586be8a14669ebf0d7bb9a622bad79eec9a16f752bcb6d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://148ad49e6923600906a8a3cac7d24763904f5ad159fee8caea69f0684b01c478",
+				"dweb:/ipfs/Qmd6wfZ6BQ1mLd7CAkh8tgfyUBrqrjMFDjK9k8hbfyZ4YX"
+			]
+		}
+	},
+	"version": 1
+}
