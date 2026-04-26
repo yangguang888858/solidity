@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "logic",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/06operator/LogicOperators.sol": "LogicOperators"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/06operator/LogicOperators.sol": {
+			"keccak256": "0x19e3d978c49a7ceca8f2810ffa034ed08798c2e2fd746671bc28ae1438caaa4b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2498ee258664aa06af8baebf4fd62e804b494201aed86019b8cde9fa9b2a9f4f",
+				"dweb:/ipfs/QmcnU1R1B5woSxe6NaKmHrzr3vFZUC14QuzzouuNmLV8ke"
+			]
+		}
+	},
+	"version": 1
+}

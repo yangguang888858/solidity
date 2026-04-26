@@ -1,0 +1,162 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createOrder",
+				"outputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentStatus",
+				"outputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deliveryOrder",
+				"outputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "s",
+						"type": "uint8"
+					}
+				],
+				"name": "enum2uint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isPaid",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "payOrder",
+				"outputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "shipOrder",
+				"outputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "i",
+						"type": "uint256"
+					}
+				],
+				"name": "uint2enum",
+				"outputs": [
+					{
+						"internalType": "enum EnumOperators.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/05enum/EnumOperators.sol": "EnumOperators"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/05enum/EnumOperators.sol": {
+			"keccak256": "0x927a04593583cb720e5752b28efe888eefdb81230497f58df9fde7219b198029",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6065b8d19a9da4ac69a15a8b0d339d43cadb083eadb199aa96e9cb000f1382e8",
+				"dweb:/ipfs/QmX3cztbmdXiCCHwfzyXezcVnEGchU48etHEYyiB9bdoob"
+			]
+		}
+	},
+	"version": 1
+}

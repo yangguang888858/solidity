@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "str1",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "str2",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/04byte&string/StringLimitations.sol": "StringLimitations"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/04byte&string/StringLimitations.sol": {
+			"keccak256": "0x290e06883be5541e604c5a66cf2af8f4c956aead7c7b6625f11cfb4b47da1d6e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3abeed5b51bf7e9518acc24b9aefa833376256d4b8167716820da1942e6391f0",
+				"dweb:/ipfs/QmUnxiwnHxYJc7yfai9VovSPstpz5ufxfHRr17ywKHfWeC"
+			]
+		}
+	},
+	"version": 1
+}

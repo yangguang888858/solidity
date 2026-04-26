@@ -1,0 +1,114 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getTypeInfo",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "int8",
+						"name": "",
+						"type": "int8"
+					},
+					{
+						"internalType": "int8",
+						"name": "",
+						"type": "int8"
+					},
+					{
+						"internalType": "int16",
+						"name": "",
+						"type": "int16"
+					},
+					{
+						"internalType": "int16",
+						"name": "",
+						"type": "int16"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/07typeconversion/TypeInfo.sol": "TypeInfo"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/07typeconversion/TypeInfo.sol": {
+			"keccak256": "0xadb78a84400976ae9ca83023f4d4d62c4034256ed1b6925d6498499d62cce5e2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4ebd9083ef7d4317e91ead41f28b87ce444dac1cd86b5e9e71f73cf3f32d6a4f",
+				"dweb:/ipfs/QmW3m4swbmtHnVmh4xXq3gZe3xXHXy3aJbMq8MyKLLmcgU"
+			]
+		}
+	},
+	"version": 1
+}

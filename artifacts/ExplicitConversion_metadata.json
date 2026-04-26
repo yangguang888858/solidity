@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "explicit",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/2.1/07typeconversion/ExplicitConversion.sol": "ExplicitConversion"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/2.1/07typeconversion/ExplicitConversion.sol": {
+			"keccak256": "0x6cf412d9e5569c6d538c89c9d58a02b356cac162452818b415c46ad788dd9c4f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be4ae06859cbc5d1ebe9ea98d22f8921e363fa95cef11aedcfa350b23e39a3dd",
+				"dweb:/ipfs/QmcM36gmbVgMZAevKcQWjjLb7SVjL28csjCX2vmcjgwg3a"
+			]
+		}
+	},
+	"version": 1
+}
