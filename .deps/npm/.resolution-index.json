@@ -544,5 +544,109 @@
         "file": "contracts/2.1/08exec/SimpleToken.sol"
       }
     }
+  },
+  "contracts/3.1/FixedArrayOperators.sol": {
+    "__sources__": {
+      "contracts/3.1/FixedArrayOperators.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract FixedArrayOperators{\r\n    uint[5] public numbers;\r\n    constructor(){\r\n        numbers[0]=10;\r\n        numbers[1]=20;\r\n        numbers[2]=30;\r\n        numbers[3]=40;\r\n        numbers[4]=50;\r\n    }\r\n    function getElement(uint i) public view returns (uint){\r\n        require(i<numbers.length,unicode\"数组下标越界\");\r\n        return numbers[i];\r\n    }\r\n    function setElement(uint i,uint value) public  returns(bool){\r\n        require(i<numbers.length,unicode\"数组下标越界\");\r\n        numbers[i]=value;\r\n        return true;\r\n    }\r\n    function getAllElement() public view returns(uint[5] memory){\r\n        return numbers;\r\n    }\r\n    function getLenth() public view returns(uint){\r\n        return numbers.length;\r\n    }\r\n}",
+        "file": "contracts/3.1/FixedArrayOperators.sol"
+      }
+    }
+  },
+  "contracts/3.1/FixedArrayLimitations.sol": {
+    "__sources__": {
+      "contracts/3.1/FixedArrayLimitations.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract FixedArrayLimitations{\r\n    uint[5] public numbers=[1,2,3,4,5];\r\n    //定长数组不能push\r\n    // function attempPush(uint value) public  returns(bool){\r\n    //     numbers.push(value);\r\n    //     return true;\r\n    // }\r\n\r\n   //定长数组不能pop\r\n    // function attempPop() public  returns(bool){\r\n    //     numbers.pop();\r\n    //     return true;\r\n    // }\r\n    //定长数组可以将元素设置为0\r\n    function resetElement(uint index) public returns(uint[5] memory){\r\n        require(index<numbers.length,unicode\"数组下标越界\");\r\n        delete numbers[index];\r\n        return numbers;\r\n    } \r\n}",
+        "file": "contracts/3.1/FixedArrayLimitations.sol"
+      }
+    }
+  },
+  "contracts/3.1/FixedArrayExample.sol": {
+    "__sources__": {
+      "contracts/3.1/FixedArrayExample.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract FixedArrayExample{\r\n    //uint定长数组\r\n    uint[5] public fixedArray;\r\n    //uint定长数组初始化\r\n    uint[3] public fixedArrayInit=[1,2,3];\r\n    //其他类型数组\r\n    address[10] public addresses;\r\n    bool[4] public flags=[true,false,true,false];\r\n    bytes32[2] public bytesArray;\r\n    string[2] public stringArray;\r\n}",
+        "file": "contracts/3.1/FixedArrayExample.sol"
+      }
+    }
+  },
+  "contracts/3.1/02DynamicArray/DynamicArrayExample.sol": {
+    "__sources__": {
+      "contracts/3.1/02DynamicArray/DynamicArrayExample.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract DynamicArrayExample{\r\n    uint[] public numbers;\r\n    address[] public addresses=[\r\n        0x5B38Da6a701c568545dCfcB03FcB875f56beddC4,\r\n        0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2\r\n    ];\r\n    string[] public names;\r\n    bool[] public flags;\r\n    bytes32[]public hashes;\r\n    constructor(){\r\n        numbers.push(1);\r\n        numbers.push(2);\r\n        numbers.push(3);\r\n    }\r\n}",
+        "file": "contracts/3.1/02DynamicArray/DynamicArrayExample.sol"
+      }
+    }
+  },
+  "contracts/3.1/02DynamicArray/DynamicArrayPush.sol": {
+    "__sources__": {
+      "contracts/3.1/02DynamicArray/DynamicArrayPush.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract DynamicArrayPush{\r\n    uint[] public numbers;\r\n    function getAllElements() public view returns(uint[] memory){\r\n        return numbers;\r\n    }\r\n    function addOne(uint value) public{\r\n        numbers.push(value);\r\n    }\r\n    function addMultiple(uint[] calldata values) public {\r\n        for(uint i=0;i<values.length;i++){\r\n            numbers.push(values[i]);\r\n        }\r\n    }\r\n    function pushAndGetlenthAndGetAllElements(uint value) public returns(uint,uint[] memory){\r\n        numbers.push(value);\r\n        return (numbers.length,numbers);\r\n    }\r\n}",
+        "file": "contracts/3.1/02DynamicArray/DynamicArrayPush.sol"
+      }
+    }
+  },
+  "contracts/3.1/02DynamicArray/DynamicArrayPop.sol": {
+    "__sources__": {
+      "contracts/3.1/02DynamicArray/DynamicArrayPop.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract DynamicArrayPop{\r\n    uint[] public numbers=[1,2,3,4,5];\r\n    function popOne() public returns(uint){\r\n        require(numbers.length>0,unicode\"数组为空\");\r\n        numbers.pop();\r\n        return numbers.length;\r\n    }\r\n    function popMutiple(uint count) public  returns(uint){\r\n        require(count<=numbers.length,unicode\"超过数组最大长度\");\r\n        for(uint i=0;i<numbers.length;i++){\r\n            numbers.pop();\r\n        }\r\n        return numbers.length;\r\n    }\r\n    function popAndReturnLastElement() public returns(uint){\r\n        require(numbers.length>0,unicode\"数组为空\");\r\n        uint lastElement=numbers[numbers.length-1];\r\n        numbers.pop();\r\n        return lastElement;\r\n    }\r\n\r\n    function getAllElements() public view returns(uint[] memory){\r\n        return numbers;\r\n    }\r\n}",
+        "file": "contracts/3.1/02DynamicArray/DynamicArrayPop.sol"
+      }
+    }
+  },
+  "contracts/3.1/02DynamicArray/DynamicArrayLength.sol": {
+    "__sources__": {
+      "contracts/3.1/02DynamicArray/DynamicArrayLength.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract DynamicArrayLength{\r\n    uint[] public numbers;\r\n    function getAllElements() public view returns(uint[] memory){\r\n        return numbers;\r\n    }\r\n    function getLength() public view returns(uint){\r\n        return numbers.length;\r\n    }\r\n    function isEmpty() public view returns(bool){\r\n        return numbers.length==0;\r\n    }\r\n    function addAndGetLength(uint value) public returns(uint){\r\n        numbers.push(value);\r\n        return numbers.length;\r\n    }\r\n}",
+        "file": "contracts/3.1/02DynamicArray/DynamicArrayLength.sol"
+      }
+    }
+  },
+  "contracts/3.1/02DynamicArray/StorageArray.sol": {
+    "__sources__": {
+      "contracts/3.1/02DynamicArray/StorageArray.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract StorageArray{\r\n    uint[] public storageArray;\r\n    function addElement(uint value) public {\r\n        storageArray.push(value);\r\n    }\r\n    function getAllElements() public view returns(uint[] memory){\r\n        return storageArray;\r\n    }\r\n}",
+        "file": "contracts/3.1/02DynamicArray/StorageArray.sol"
+      }
+    }
+  },
+  "contracts/3.1/02DynamicArray/MemoryArray.sol": {
+    "__sources__": {
+      "contracts/3.1/02DynamicArray/MemoryArray.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract MemoryArray{\r\n    function createMemoryArray() public pure returns(uint[] memory){\r\n      uint[] memory arr=new uint[](5);\r\n      arr[0]=1;\r\n      arr[1]=2;\r\n      arr[2]=3;\r\n      arr[3]=4;\r\n      arr[4]=5;\r\n      return arr;\r\n    }\r\n\r\n// function memoryArrayLimitations() public{\r\n//     uint[] memory arr=new uint[](5);\r\n//     //memory array 是固定长度的数组\r\n//     //不能push()\r\n//     // arr.push(1);\r\n\r\n//     //不能pop()\r\n//     // arr.pop();\r\n\r\n//     //不能改变数组长度\r\n//     // arr.length=10;\r\n// }\r\n    \r\n}",
+        "file": "contracts/3.1/02DynamicArray/MemoryArray.sol"
+      }
+    }
+  },
+  "contracts/3.1/03ArrayBasicOperators/AccessArray.sol": {
+    "__sources__": {
+      "contracts/3.1/03ArrayBasicOperators/AccessArray.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract AccessArray{\r\n    uint[] public numbers=[10,20,30,40,50];\r\n    function getElement(uint index) public view returns(uint){\r\n        require(index<numbers.length,unicode\"数组下标越界\");\r\n        return numbers[index];\r\n    }\r\n    function getFirst() public view returns(uint){\r\n        require(numbers.length>0,unicode\"数组为空\");\r\n        return numbers[0];\r\n    }\r\n     function getLast() public view returns(uint){\r\n        require(numbers.length>0,unicode\"数组为空\");\r\n        return numbers[numbers.length-1];\r\n    }\r\n    function safeGetElement(uint index) public view returns(bool,uint){\r\n        require(numbers.length>0,unicode\"数组为空\");\r\n        if (index>=numbers.length){\r\n            return (false,0);\r\n        }else{\r\n            return (true,numbers[index]);\r\n        }\r\n    }\r\n}",
+        "file": "contracts/3.1/03ArrayBasicOperators/AccessArray.sol"
+      }
+    }
+  },
+  "contracts/3.1/03ArrayBasicOperators/GetArray.sol": {
+    "__sources__": {
+      "contracts/3.1/03ArrayBasicOperators/GetArray.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract GetArray{\r\n    uint[] public numbers;\r\n    constructor() {\r\n        numbers.push(1);\r\n        numbers.push(2);\r\n        numbers.push(3);\r\n    }\r\n    function getAll() public view returns(uint[] memory){\r\n        return numbers;\r\n    }\r\n    function process() public view returns (uint[] memory){\r\n        uint[] memory result=new uint[](numbers.length);\r\n        for(uint i=0;i<numbers.length;i++){\r\n            result[i]=numbers[i]*2;\r\n        }\r\n        return result;\r\n    }\r\n}",
+        "file": "contracts/3.1/03ArrayBasicOperators/GetArray.sol"
+      }
+    }
+  },
+  "contracts/3.1/03ArrayBasicOperators/ModifyArray.sol": {
+    "__sources__": {
+      "contracts/3.1/03ArrayBasicOperators/ModifyArray.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract ModifyArray{\r\n    uint[] public numbers=[1,2,3,4,5];\r\n    function modifyOne(uint index,uint value) public returns(uint[] memory){\r\n        require(index<numbers.length,unicode\"数组下标越界\");\r\n        numbers[index]=value;\r\n        return numbers;\r\n    }\r\n    function increment(uint index) public returns(uint[] memory){\r\n        require(index<numbers.length,unicode\"数组下标越界\");\r\n        numbers[index]+=1;\r\n        return numbers;\r\n    }\r\n    function updateMutiple(uint[] memory indexs,uint[] memory values) public returns(uint[] memory){\r\n        require(indexs.length==values.length,unicode\"数组长度不匹配\");\r\n        for(uint i=0;i<indexs.length;i++){\r\n            require(indexs[i]<numbers.length,unicode\"数组下标越界\");\r\n            numbers[indexs[i]]=values[i];\r\n        }\r\n        return numbers;\r\n    }\r\n    function resetAll() public returns(uint[] memory){\r\n        delete numbers;\r\n        return numbers;\r\n    }\r\n}",
+        "file": "contracts/3.1/03ArrayBasicOperators/ModifyArray.sol"
+      }
+    }
+  },
+  "contracts/3.1/03ArrayBasicOperators/DeleteTrap.sol": {
+    "__sources__": {
+      "contracts/3.1/03ArrayBasicOperators/DeleteTrap.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract DeleteTrap{\r\n    uint[] public numbers=[1,2,3,4,5];\r\n    function deleteElement(uint index) public returns(uint[] memory){\r\n        require(index<numbers.length,unicode\"数组下标越界\");\r\n        delete numbers[index];\r\n        return numbers;\r\n    }\r\n    function hasZero() public view returns(bool){\r\n        for(uint i=0;i<numbers.length;i++){\r\n            if (numbers[i]==0){\r\n                return true;\r\n            }\r\n        }\r\n        return false;\r\n    }\r\n}",
+        "file": "contracts/3.1/03ArrayBasicOperators/DeleteTrap.sol"
+      }
+    }
   }
 }

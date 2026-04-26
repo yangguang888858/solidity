@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createMemoryArray",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/3.1/02DynamicArray/MemoryArray.sol": "MemoryArray"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/3.1/02DynamicArray/MemoryArray.sol": {
+			"keccak256": "0x1721f5dc9e4208491584063a3da781111d9ae14dc3cbd9fdc0d9b5b82da60f44",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://39a607dab054f6804612859563701a6674886a08ebaabfd4f4ae37c557b7647c",
+				"dweb:/ipfs/QmSQqKUCLejyX2X7VSvzGtiTsYm3q4i1XeuojRy7xTN7dX"
+			]
+		}
+	},
+	"version": 1
+}
