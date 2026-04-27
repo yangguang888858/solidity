@@ -648,5 +648,29 @@
         "file": "contracts/3.1/03ArrayBasicOperators/DeleteTrap.sol"
       }
     }
+  },
+  "contracts/3.1/04ArrayRemoval/OrderRemoval.sol": {
+    "__sources__": {
+      "contracts/3.1/04ArrayRemoval/OrderRemoval.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract OrderRemoval{\r\n    uint[] public numbers=[1,2,3,4,5];\r\n    function getAllElement() public view returns(uint[] memory){\r\n        return numbers;\r\n    }\r\n    function orderRemove(uint index) public returns(uint[] memory) {\r\n        require(index<numbers.length,unicode\"数组下标越界\");\r\n        for(uint i=index;i<numbers.length-1;i++){\r\n            numbers[i]=numbers[i+1];\r\n        }\r\n        numbers.pop();\r\n        return numbers;\r\n    }\r\n}",
+        "file": "contracts/3.1/04ArrayRemoval/OrderRemoval.sol"
+      }
+    }
+  },
+  "contracts/3.1/04ArrayRemoval/UnOrderRemoval.sol": {
+    "__sources__": {
+      "contracts/3.1/04ArrayRemoval/UnOrderRemoval.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract UnOrderRemoval{\r\n    uint[] public numbers=[1,2,3,4,5];\r\n    function getAllElement() public view returns(uint[] memory){\r\n        return numbers;\r\n    }\r\n    function unOrderRemoval(uint index) public  returns(uint[] memory){\r\n                require(index<numbers.length,unicode\"数组下标越界\");\r\n        numbers[index]=numbers[numbers.length-1];\r\n        numbers.pop();\r\n        return numbers;\r\n    }\r\n}",
+        "file": "contracts/3.1/04ArrayRemoval/UnOrderRemoval.sol"
+      }
+    }
+  },
+  "contracts/3.1/04ArrayRemoval/RemovalCompare.sol": {
+    "__sources__": {
+      "contracts/3.1/04ArrayRemoval/RemovalCompare.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\ncontract RemovalCompare{\r\n    uint[] public orderArray;\r\n    uint[] public unorderArray;\r\n    function init() public {\r\n        delete orderArray;\r\n        delete unorderArray;\r\n        for (uint i = 1; i <= 100; i++) {\r\n            orderArray.push(i);\r\n            unorderArray.push(i);\r\n        }\r\n    }\r\n\r\n    function getOrderArray() public view returns(uint[] memory){\r\n        return  orderArray;\r\n    }\r\n\r\n     function getUnOrderArray() public view returns(uint[] memory){\r\n        return  unorderArray;\r\n    }\r\n\r\n    function orderRemoval(uint index) public returns(uint[] memory){\r\n        require(index>=50,unicode\"没有足够的元素\");\r\n        for(uint i=index;i<orderArray.length-1;i++){\r\n            orderArray[i]=orderArray[i+1];\r\n        }\r\n        orderArray.pop();\r\n        return orderArray;\r\n    }\r\n\r\n    function unorderRemoval(uint index) public returns(uint[] memory){\r\n        require(index>=50,unicode\"没有足够的元素\");\r\n        unorderArray[index] = unorderArray[unorderArray.length-1];\r\n        unorderArray.pop();\r\n        return unorderArray;\r\n    }\r\n}",
+        "file": "contracts/3.1/04ArrayRemoval/RemovalCompare.sol"
+      }
+    }
   }
 }
