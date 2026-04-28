@@ -1,0 +1,174 @@
+{
+	"compiler": {
+		"version": "0.8.34+commit.80d5c536"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "row",
+						"type": "uint256[]"
+					}
+				],
+				"name": "addRow",
+				"outputs": [
+					{
+						"internalType": "uint256[][]",
+						"name": "",
+						"type": "uint256[][]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllElement",
+				"outputs": [
+					{
+						"internalType": "uint256[][]",
+						"name": "",
+						"type": "uint256[][]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDimesion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "rows",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cols",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "row",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "col",
+						"type": "uint256"
+					}
+				],
+				"name": "getElement",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "matrix",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "row",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "col",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "setElememt",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/3.1/06MultiDimesionArray/TwoDimesionArray.sol": "TwoDimesionArray"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/3.1/06MultiDimesionArray/TwoDimesionArray.sol": {
+			"keccak256": "0x3e1bc3fc666ba3ecbc4eb2ecee6f6688f3d4881f75f3264f24fcb5f9f74b06d0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b25298c7451e49dfc6be0532815624e74b3948abe40f121de95c2e57be535c87",
+				"dweb:/ipfs/QmbpcGFgH5NHjCLQCMFEPg1PLg9HQ7sQeR6dbBP7oPqfA2"
+			]
+		}
+	},
+	"version": 1
+}
